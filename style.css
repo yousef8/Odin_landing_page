@@ -198,3 +198,13 @@ article:nth-child(3) {
     height: 3rem;
     border-radius: 0.4rem;
 }
+
+/* Lastly the Footer */
+.footer {
+    background-color: var(--dark_bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 2rem;
+}
