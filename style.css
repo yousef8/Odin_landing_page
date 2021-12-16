@@ -11,6 +11,9 @@
     --information_head_size: 36px;
     --information_head_weight: extra-bold;
     --information_head_color: #1f2937;
+    --quote_bg_color: #E5E7EB;
+    --quote_size: 36px;
+    --quote_color: #1f2937;
 }
 
 * {
@@ -148,4 +151,30 @@ main article:first-of-type {
 
 .site .text {
     text-align: center;
+}
+
+/* Fourth Quote part */
+article:last-of-type {
+    background-color: var(--quote_bg_color);
+    border: 1px solid red;
+}
+.quote {
+    background-color: var(--quote_bg_color);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    margin: 5rem auto;
+}
+
+.quote .quote_body {
+    font-size: var(--quote_size);
+    font-weight: light;
+    font-style: italic;
+    color: var(--quote_color)
+}
+.quote .author {
+    align-self: flex-end;
 }
