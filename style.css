@@ -3,6 +3,7 @@
     --sec_link_color: #e5e7eb;
     --header_logo_size: 24px;
     --header_logo_color: #f9faf8;
+    --dark_bg: #1f2937;
 }
 
 * {
@@ -22,8 +23,12 @@ body {
 }
 
 /* First header part */
+header {
+    background-color: var(--dark_bg);
+}
 .header{
     border: 1px solid red;
+    background-color: var(--dark_bg);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,3 +60,5 @@ body {
         gap: 2rem;
     }
 }
+
+/* Second Landing part */
