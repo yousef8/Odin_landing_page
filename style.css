@@ -4,6 +4,10 @@
     --header_logo_size: 24px;
     --header_logo_color: #f9faf8;
     --dark_bg: #1f2937;
+    --hero_main_size: 48px;
+    --hero_main_weight: extra-bold;
+    --hero_main_color: #F9FAF8;
+    --button_call_color: #3882f6;
 }
 
 * {
@@ -27,7 +31,6 @@ header {
     background-color: var(--dark_bg);
 }
 .header{
-    border: 1px solid red;
     background-color: var(--dark_bg);
     display: flex;
     justify-content: space-between;
@@ -36,13 +39,11 @@ header {
 }
 
 .header .logo{
-    border: 1px solid red;
     color: var(--header_logo_color);
     font-size: var(--header_logo_size);
 }
 
 .header .nav_bar{
-    border: 1px solid red;
     list-style-type: none;
     display: flex;
     gap: 1rem;
@@ -62,3 +63,44 @@ header {
 }
 
 /* Second Landing part */
+main article:first-of-type {
+    border: 1px solid var(--dark_bg);
+    background-color: var(--dark_bg);
+}
+.landing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    margin: 6rem auto;
+    background-color: var(--dark_bg);
+}
+
+.landing .img {
+    order: 1;
+}
+
+.landing img {
+    width: 600px;
+}
+
+.landing h1 {
+    font-size: var(--hero_main_size);
+    font-weight: var(--hero_main_weight);
+    color: var(--hero_main_color)
+}
+
+.landing p {
+    color: var(--sec_link_color);
+    font-size: var(--sec_link_txt);
+}
+
+.landing button {
+    color: white;
+    background-color: var(--button_call_color);
+    border: none;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 0.4rem;
+    margin-top: 1rem;
+}
